@@ -1,0 +1,508 @@
+<!DOCTYPE html>   
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KwaraXpress Transport</title>
+<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css">
+<link rel="stylesheet" href="https://cdn.fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<style>
+  /* .navbar{
+    background-color:  rgb(52, 52, 221);
+  } */
+  .nav-item{
+    margin-left: 120px;
+    color: white; 
+  }
+  .navbar{
+    background-color:  rgba(128, 128, 128, 0.726);
+    position: fixed;
+    width: 100%;
+  }
+  .nav-link{
+     color: white;
+  }
+  .contact{
+    margin-right:50px;
+    float: right;
+    margin-right: 50px; 
+  }
+  .logo-text{
+    margin-left: 80px;
+    color: black;
+  }
+  .logo-text1{
+    color:brown;
+  }
+  @media only screen and (max-width: 600px) {
+    .top-nav{
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .best{
+      height: 1150px;
+      background-color: rgb(230, 225, 225);
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .footer-text{
+      text-align: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .payment{background-color: white;
+      height: 300px; width: 300px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .verify{
+      height: 300px; width: 300px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .ticket{
+      height: 400px;
+    }
+    }
+  .dropdown-menu{
+    background-color: rgba(128, 128, 128, 0.726);
+  }
+  #sliderDiv{
+    /* background-image: linear-gradient(to bottom, rgba(245,246,252,0.52),rgba(117,19,93,0.73)), url('pictures/tr1.jpg'); */
+    background-image: url('pictures/bigg.jpg');
+    /* margin:auto;
+    padding: 20px;
+    width: 100%; */
+    height: 680px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer {
+  height:100px;
+  background-color:  black;
+  color: white;
+  overflow: hidden  !important;
+}
+.best-section{
+  background-color: white;
+  /* padding: 20px; */
+  height: 250px;
+  border-radius: 20px;
+}
+.demo{padding: 50px;
+  height: 300px;
+}
+.foot{
+  /* padding: 200px; */
+}
+.btn-large{
+  margin-top: 20px;
+}
+.ticket{
+  background-color: rgba(128, 128, 128, 0.726);
+  height: 300px;
+  margin-top: 170px;
+}
+.tic-form{
+  padding: 20px;
+}
+.sec-form{
+  margin-top: 20px;
+}
+.lbl{
+  color: white;
+}
+.book-btn{
+  margin-top: 40px;
+}
+.text1{
+  color: orange;
+}
+.nav-ink{
+     color: black;
+     padding: 5px;
+  }
+</style>
+</head>
+<body>
+  <!--top nav-->
+  <div class="top-nav">
+      <h1 class="logo-text">KwaraXpress &nbsp;&nbsp;
+        <span style="color:brown;">Transport</span>
+        <span class="contact" >Contact Us <small class="text text-danger">+234 816 345 7622</small></span>
+      </h1>
+  </div>
+  <!--second nav-->
+  <!-- <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">KwaraXpress</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Index.html" style="color: white;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Gallery.html" style="color: white;">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="color: white;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="companyprofile.html">Company Profile</a></li>
+              <li><a class="dropdown-item" href="staffdetails.html">Staff Details</a></li>
+              <li><a class="dropdown-item" href="Terminals.html">Terminals</a></li>
+              <li><a class="dropdown-item" href="products$services.html">Product & Services</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" style="color: white;" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Customer Tools
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Credit Aplllications</a></li>
+              <li><a class="dropdown-item" href="#">Customer Log In</a></li>
+              <li><a class="dropdown-item" href="#">Online Claim Form</a></li>
+              <li><a class="dropdown-item" href="#">Terms & Conditions</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+  <!--second nav ends-->
+  <!-- <div class="row">
+    <div class="col-lg-6 col-md-6">
+      <label>Depature State</label>
+      <input class="form-control" placeholder="Your departure state">
+      <label>Destinations</label>
+      <input class="form-control" placeholder="Select Terminal">
+    </div>
+  </div> -->
+  <section style="background-color: #79bff8;">
+  
+      <div class="col-12" id="sliderDiv">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">KwaraXpress</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="Index.html" style="color: white;">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Gallery.html" style="color: white;">Gallery</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="color: white;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    About us
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="companyprofile.html">Company Profile</a></li>
+                    <li><a class="dropdown-item" href="staffdetails.html">Staff Details</a></li>
+                    <li><a class="dropdown-item" href="Terminals.html">Terminals</a></li>
+                    <li><a class="dropdown-item" href="products$services.html">Product & Services</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" style="color: white;" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Customer Tools
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Credit Aplllications</a></li>
+                    <li><a class="dropdown-item" href="#">Customer Log In</a></li>
+                    <li><a class="dropdown-item" href="#">Online Claim Form</a></li>
+                    <li><a class="dropdown-item" href="#">Terms & Conditions</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <br><br><br>
+          <h1 style="text-align: center; color: orange;"><marquee behavior="slide" direction="center" scrolldelay="00.0">We made transportation easy and convienent.</marquee></h1>
+          <div>
+            <div class="container">
+              <div class="row">
+                <div class="ticket col-12 col-lg-6 col-md-8">
+                  <form class="tic-form">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                          <div class="inp1">
+                            <label class="lbl">Depature State</label>
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>Your Depature State</option>
+                              <option value="1">Ilorin</option>
+                              <option value="2">Lagos</option>
+                              <option value="3">Minna</option>
+                            </select>
+                        </div>
+                          <div class="sec-form">
+                            <label class="lbl">Destinations</label>
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>Select Terminal First</option>
+                              <option value="1">Lagos</option>
+                              <option value="2">Kogi</option>
+                              <option value="3">Kaduna</option>
+                              <option value="3">Kano</option>
+                              <option value="3">Niger</option>
+                              <option value="3">Sokoto</option>
+                              <option value="3">Kebbi</option>
+                            </select>
+                        </div>
+                      </div>
+                        <div class="col-lg-6 col-md-6">
+                          <div class="inp1">
+                            <label class="lbl">Terminals</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Select Depature State First</option>
+                            <option value="1">offa garage</option>
+                            <option value="2">Tunga</option>
+                            <option value="3">Ikeja</option>
+                          </select>
+                          </div>
+                          <div class="sec-form">
+                            <label class="lbl">Depature Date</label>
+                            <input class="form-control" type="date">
+                          </div>
+                          <div class="book-btn">
+                            <button type="button" class="btn btn-success btn-lg btn-block">Search & Book Now</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+</section>
+<section style="background-image: linear-gradient(to left, rgba(52, 79, 230, 0.52),rgba(109, 80, 94, 0.73)) ; height: 500px;">
+  <div class="container">
+<div class="row">
+  <div class="col-12 col-lg-6 col-md-6" style="padding: 10%;">
+  <h1>Verify Booking</h1>
+  <p>Check your booking status using the 10 digit verification code</p>
+  <input class="form-control" type="text" placeholder="verification code">
+  </div>
+  <div class="col-12 col-lg-6 col-md-6" style="padding: 10%;">
+    <h1>Track Shiftment</h1>
+    <p>Track your shipment using the 10 digit verification code</p>
+    <input class="form-control" type="text" placeholder="verification code">
+    </div>
+</div>
+  </div>      
+</section>
+<section style="background-color: rgb(230, 225, 225); height: 1550px;">
+  <div class="best"><br><br>
+      <h4 class="text text-center">Our Goodness</h4><br>
+      <h1 class="text1 text-center">What Makes Us Special</h1><br>
+      <div class="container">
+        <div class="row" >
+          <div class="col-lg-4  col-md-4 col-sm-12">
+           <div class="card card-default rounded-lg" style="padding: 2% !important; height: 100%;">
+              <!-- <img src="pictures/wap5.jpg" s> -->
+              <div style="text-align: center;">
+             <span><i class="fa fa-bus fa-lg" width="66" height="56" style="color: red;" fill="currentColor"></i></span>
+              </div>
+              <h5>Quality Vehicles</h5>
+              <p>The Company has recently acquired 42 brand new buses to augment its operations. 
+                As a Company that is always desirous of improving on its services.</p>
+            </div>
+          </div>
+       
+        
+       
+          <div  class="col-lg-4  col-md-4 col-sm-12">
+            <div class="card card-default rounded-lg padding" style="padding: 2% !important;height: 100%;">
+              <div style="text-align: center;">
+         <span><i class="fas fa-align-justify fa-lg" width="66" height="56" style="color: red;" fill="currentColor"></i></span>
+              </div>
+              <!-- <img src="pictures/wap_1.jpg"> -->
+              <h5>24/7 Customer services</h5>
+              <p >Kwara State, while it currently operates on 21 interstate and 13 intra- state routes across Nigeria.<br> We are always available to recieve anyone at any time of the day.</p>
+            </div>
+          </div> 
+        
+        
+        
+          <div  class=" col-lg-4  col-md-4 col-sm-12">
+            <div class="card card-default rounded-lg" style="padding: 2% !important; height: 100%;" >
+              <div style="text-align:center;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="66" height="56" style="color: red;" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>
+              </div>
+              <h5>Working hours</h5>
+              <p> Mondays-Sundays <br> You can always contact us for more details.</p>   
+            </div> 
+          </div>
+        </div>
+    
+
+          <div class="row">
+
+            <div class="col-lg-4  col-md-4 col-sm-12">
+              <div class="card card-default rounded-lg" style="padding: 2% !important; height: 250px">
+                 <h5>Booking flexibilty </h5>
+                 <p> You can book for with us any where at your convienent time,we are always available.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4  col-md-4 col-sm-12">
+            <div class="card card-default rounded-lg" style="padding: 2% !important; height: 250px;">
+                 <h5>Free Cancellation </h5>
+                 <p> You are free to make cancellation and refund your money. </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4  col-md-4 col-sm-12">
+              <div class="card card-default rounded-lg" style="padding: 2% !important; height: 250px">
+                 <h5>Fixed Rates </h5>
+                 <p></p>
+            </div>
+         </div>
+
+        </div>
+
+
+        </div>
+      </div>
+  </div>
+</section>
+
+
+
+<section style="background-color: rgba(128, 128, 128, 0.726); height: 800px;">
+  <div class="container">
+    <div class="row">
+      <div class=" col-lg-4  col-md-6 col-sm-12" style="padding: 10%;">
+        <h3>Location</h3>
+          <p>Head:Murtala Mohammed Ajasepo road, Offa Road Ilorin,Kwara State.</p>
+          <p>City/Town:Ilorin </p>
+          <p>State:Kwara</p>
+          <p>Main contact:08163457622</p>
+          <p>Year Founded:1989
+      </div>
+    <div class=" col-lg-4  col-md-6 col-sm-12" style="padding: 10%;">
+        <h3>Quicklinks</h3>
+        <ul>
+          <li><a class="nav-ink" href="#">Customer Tools</a></li>
+          <li><a class="nav-ink" href="staffdetails.html">Staff Details</a></li>
+          <li><a class="nav-ink" href="companyprofile.html">Company Profile</a></li>
+          <li><a class="nav-ink" href="Gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div  class=" col-lg-4  col-md-6 col-sm-12" style="padding: 10%">
+        <h3>Supported Payment Method</h3>
+        <img src="pictures/card.jpg" style="height: 150px; width: 250px;">
+      </div>
+    </div>
+  </div>
+
+  
+
+</section>
+
+
+<footer class="footer" >
+  <div class="Container">
+    <div class="row" style="margin: 20px;">
+      <div class="col-12 col-lg-6 col-md-6">
+        <h6 class="footer-text">Stay Connected With Us - 
+        <span><i class="fa fa-facebook"></i></span>
+        <span><i class="fa fa-instagram"></i></span>
+        <span><i class="fa fa-twitter"></i></span>
+        </h6>
+      </div>
+      <div class="col-12 col-lg-6 col-md-6">
+        <h6 class="footer-text">KwaraXpress Transport Limited @2021 All right reserved</h5>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<!--footer-->
+<!-- <footer class="footer" >
+  <div class="container">
+    <div class="row" >
+      <div class="demo col-lg-4">
+        <h5>Contact us</h5>
+        <input type="number" class="form-control" placeholder="08163457622">
+        <p>Or visit us @www.KwaraXpress.com</p>
+        </div>
+        <div class="demo col-lg-4">
+        <h5>Social media handles</h5>
+        <p>instagram</p>
+        <p>twitter</p>
+        <p>facebook</p>
+        </div>
+        <div class="demo col-lg-4">
+          <ul>
+         <li> <a class="nav-link" href="Index.html">Home</a></li>
+         <li> <a class="nav-link" href="Gallery.html">Gallery</a></li>
+          <li ><a class="nav-link" href="#">About Us</a></li>
+          <li><a class="nav-link" href="#">Customer Tools</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="foot col-lg-12 text text-center">
+          <strong> Copyright &copy; 2021. All right reserved by Digprom</strong>
+          </div>
+        </div>
+</footer> -->
+<!-- <section style="background-image: linear-gradient(to left, rgba(52, 79, 230, 0.52),rgba(109, 80, 94, 0.73)) ; height: 400px;overflow: hidden;">
+  <div class="container">
+<div class="row" style="padding: 100px;">
+  <div class="col-12 col-lg-6 col-md-6">
+  <h1>Verify Booking</h1>
+  <p>Check your booking status using the 10 digit verification code</p>
+  <input class="form-control" type="text" placeholder="verification code">
+  </div>
+  <div class="col-12 col-lg-6 col-md-6">
+    <h1>Track Shiftment</h1>
+    <p>Track your shipment using the 10 digit verification code</p>
+    <input class="form-control" type="text" placeholder="verification code">
+    </div>
+</div>
+  </div>
+</section> -->
+<!--<footer class="footer" >
+  <div class="Container">
+    <div class="row" style="margin: 20px;">
+      <div class="col-12 col-lg-6 col-md-6">
+        <h6 class="footer-text">Stay Connected With Us - </h6>
+      </div>
+      <div class="col-12 col-lg-6 col-md-6">
+        <h6 class="footer-text">KwaraXpress Transport Limited @2021 All right reserved</h5>
+      </div>
+    </div>
+  </div>
+</footer>-->
+
+
+</body>
+</html>
+
+
+
+
+

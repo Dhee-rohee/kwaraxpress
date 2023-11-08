@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    
+</style>
+</head>
+<body style="background-color: rgb(20, 19, 20);">
+    <div class="container" style="background-color: rgb(20, 19, 20);box-shadow: grey; margin: auto; width: 300px; height: 450px;border-style: ridge; border-width: 2px;margin-top: 100px;">
+    <h1 style="text-align: center; color: white;">Calculator</h1>
+        <div class="col-lg-12">
+        <input type="text" id="output" style="width: 250px;height: 30px; margin-left: 20px; margin-top:-20px; border-width: 2px; text-align: end;"/>
+    </div>
+    <div class="row">
+        <div class="col-10" style="margin:auto; padding-left: 30px; padding-top: 15px;">
+            <div class="col-3 text text-center" id="modulus" style="box-shadow: black;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" ><button onclick="Entermodul(this.value)" style="margin:auto;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" value="%">%</button></div>
+            <div class="col-3 text text-center"id="case" style="box-shadow: black;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px; margin-top: -50px;margin-left: 60px;" ><button onclick="Entermodul(this.value)" style="margin:auto;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" value="c">c</button></div>
+            <div class="col-3 text text-center" id="less" style="box-shadow: black;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;margin-top: -50px;margin-left: 120px;" ><button onclick="Entermodul(this.value)" style="margin:auto;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" value="<"><</button></div>
+            <div class="col-3 text text-center" id="sign" style="box-shadow: black;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;margin-top: -50px;margin-left: 180px;" ><button onclick="Entermodul(this.value)" style="margin:auto;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" value="/">/</button></div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-10" style="margin:auto; padding-left: 30px; padding-top: 15px;">
+                <div class="col-3 text text-center" id="seven" style="box-shadow: black;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" ><button onclick="Entermodul(this.value)" style="margin:auto;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" value="7">7</button></div>
+                <div class="col-3 text text-center"  id="eight" style="box-shadow: black;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px; margin-top: -50px;margin-left: 60px;" ><button onclick="Entermodul(this.value)" style="margin:auto;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" value="8">8</button></div>
+            <div class="col-3 text text-center" id="nine" style="box-shadow: black;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;margin-top: -50px;margin-left: 120px;" ><button onclick="Entermodul(this.value)" style="margin:auto;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" value="9">9</button></div>
+            <div class="col-3 text text-center" id="demo" style="box-shadow: rgb(236, 221, 221);text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;margin-top: -50px;margin-left: 180px;" ><button onclick="Entermodul(this.value)" style="margin:auto;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" value="*">*</button></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10" style="margin:auto; padding-left: 30px; padding-top: 15px;">
+                <div class="col-3 text text-center" id="four" style="box-shadow: black;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" ><button style="margin:auto;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" value="4">4</button></div>
+                <div class="col-3 text text-center" id="five" style="box-shadow: black;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px; margin-top: -50px;margin-left: 60px;" ><button onclick="Entermodul(this.value)" style="margin:auto;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" value="5">5</button></div>
+            <div class="col-3 text text-center" id="six" style="box-shadow: black;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;margin-top: -50px;margin-left: 120px;" ><button onclick="Entermodul(this.value)" style="margin:auto;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" value="6">6</button></div>
+            <div class="col-3 text text-center" id="minus" style="box-shadow: black;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;margin-top: -50px;margin-left: 180px;" ><button onclick="Entermodul(this.value)" style="margin:auto;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" value="-">-</button></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10" style="margin:auto; padding-left: 30px; padding-top: 15px;">
+                <div class="col-3 text text-center"  id="one" style="box-shadow: black;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" ><button onclick="Entermodul(this.value)" style="margin:auto;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" value="1">1</button></div>
+                <div class="col-3 text text-center" id="two" style="box-shadow: black;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px; margin-top: -50px;margin-left: 60px;" ><button onclick="Entermodul(this.value)" style="margin:auto;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" value="2">2</button></div>
+            <div class="col-3 text text-center" id="three" style="box-shadow: black;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;margin-top: -50px;margin-left: 120px;" ><button onclick="Entermodul(this.value)" style="margin:auto;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" value="3">3</button></div>
+            <div class="col-3 text text-center" id="plus" style="box-shadow: black;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;margin-top: -50px;margin-left: 180px;" ><button onclick="Entermodul(this.value)" style="margin:auto;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" value="+">+</button></div>
+            </div>
+        </div>
+             <div class="row">
+            <div class="col-10" style="margin:auto; padding-left: 30px; padding-top: 15px;">
+                <div class="col-3 text text-center"  id="pos" style="box-shadow: black;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" ><button onclick="Entermodul(this.value)" style="margin:auto;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" value="+/-">+/-</button></div>
+                <div class="col-3 text text-center" id="zero" style="box-shadow: black;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px; margin-top: -50px;margin-left: 60px;" ><button onclick="Entermodul(this.value)" style="margin:auto;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" value="0">0</button></div>
+            <div class="col-3 text text-center" id="dot" style="box-shadow: black;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;margin-top: -50px;margin-left: 120px;" ><button onclick="Entermodul(this.value)" style="margin:auto;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" value=".">.</button></div>
+            <div class="col-3 text text-center" id="mult" style="box-shadow: black;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;margin-top: -50px;margin-left: 180px;" ><button onclick="Entermodul(this.value)" style="margin:auto;text-align: center;color: white; width: 50px;height: 50px;background-color: rgb(88, 86, 86);border-radius:50px;" value="=">=</button></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+            
+    <script>
+     function Entermodul(value){
+         if(value == '='){
+            var result = eval(document.getElementById('output').value) 
+            document.getElementById('output').value = result
+            return
+         }
+        document.getElementById('output').value += value;
+       if(value == 'c'){
+           var result = document.getElementById('output').value
+           document.getElementById('output').value = ""
+           return
+       }
+
+     }
+    </script>
+</body>
